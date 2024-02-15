@@ -1,6 +1,8 @@
 import Latte from './latte.jpg';
 import './style.css';
 function homePage() {
+    const homeBtn = document.querySelector('#home-btn');
+    homeBtn.setAttribute('class', 'selected-btn');
     const content = document.querySelector('#content');
     const h1 = document.querySelector('h1');
     const mainContent = document.createElement('div');

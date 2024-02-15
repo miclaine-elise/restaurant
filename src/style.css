@@ -67,6 +67,10 @@ button {
     text-align: center;
 }
 
+.selected-btn {
+    border-bottom: 0;
+}
+
 #content {
     display: flex;
     justify-content: center;
@@ -108,4 +112,60 @@ button {
     font-size: 1rem;
     grid-area: 2/1/3/2;
     line-height: 1.5rem;
+}
+
+
+/* Menu Page */
+
+#menu {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    width: 60%;
+    border: solid 3px rgb(0, 0, 164);
+    padding: 3rem;
+    gap: 3rem;
+}
+
+ul {
+    padding-left: 0.5rem;
+}
+
+li {
+    list-style-type: none;
+    color: rgb(0, 0, 164);
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.category-title {
+    color: rgb(0, 0, 164);
+    font-size: 1.5rem;
+    border: solid 3px rgb(0, 0, 164);
+    letter-spacing: 0.2rem;
+    padding: 0.25rem;
+    font-weight: 800;
+}
+
+#brunch-menu {
+    grid-area: 1/2/4/3;
+}
+
+#brunch-menu ul li {
+    margin-top: 1rem;
+}
+
+h4 {
+    margin: 0;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+}
+
+#brunch-menu ul li p {
+    font-weight: 100;
+}
+
+p {
+    margin: 0;
 }
