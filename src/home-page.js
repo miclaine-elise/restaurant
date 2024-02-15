@@ -2,6 +2,10 @@ import Latte from './latte.jpg';
 import './style.css';
 function homePage() {
     const homeBtn = document.querySelector('#home-btn');
+    const menuBtn = document.querySelector('#menu-btn');
+    const aboutBtn = document.querySelector('#about-btn');
+    menuBtn.removeAttribute('class', 'selected-btn');
+    aboutBtn.removeAttribute('class', 'selected-btn');
     homeBtn.setAttribute('class', 'selected-btn');
     const content = document.querySelector('#content');
     const h1 = document.querySelector('h1');

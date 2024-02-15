@@ -3,9 +3,12 @@ import './style.css';
 function menuPage() {
     const content = document.querySelector('#content');
     const homeBtn = document.querySelector('#home-btn');
-    homeBtn.removeAttribute('class', 'selected-btn');
+    const aboutBtn = document.querySelector('#about-btn');
     const menuBtn = document.querySelector('#menu-btn');
+    homeBtn.removeAttribute('class', 'selected-btn');
+    aboutBtn.removeAttribute('class', 'selected-btn');
     menuBtn.setAttribute('class', 'selected-btn');
+
     const menu = document.createElement('div');
     menu.setAttribute('id', 'menu');
     const coffeeMenu = document.createElement('div');

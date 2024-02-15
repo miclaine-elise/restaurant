@@ -169,3 +169,51 @@ h4 {
 p {
     margin: 0;
 }
+
+/* About Page */
+#about-content {
+    margin: 3rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+#about-content h1 {
+    font-size: 6rem;
+    font-family: 'Caveat', sans-serif;
+    grid-area: 1/1/2/2;
+    line-height: 5rem;
+    margin: 0;
+}
+
+#about-content p {
+    color: rgb(0, 0, 164);
+    font-weight: 100;
+}
+
+#about-content img {
+    grid-area: 1/2/3/3;
+    width: 400px;
+    padding: 1rem;
+    border: solid 3px rgb(0, 0, 164);
+}
+
+#contact {
+    grid-area: 3/1/4/3;
+    margin-top: 3rem;
+    color: rgb(0, 0, 164);
+    display: grid;
+    grid-template-rows: auto 1rem 1rem;
+    justify-content: center;
+}
+
+#contact span {
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
